@@ -5,60 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li>
-            <a href=""><span>Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span>Web</span>Studio</a>
           </li>
           <li>
-            <ul>
-              <li><a>Студия</a></li>
-              <li><a>Портфолио</a></li>
-              <li><a>Контакты</a></li>
+            <ul class="menu-list">
+              <li class="menu-item"><a>Студия</a></li>
+              <li class="menu-item"><a>Портфолио</a></li>
+              <li class="menu-item"><a>Контакты</a></li>
             </ul>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li><a>info@devstudio.com</a></li>
-        <li><a>+38 096 111 11 11</a></li>
+      <ul class="contact-list">
+        <li class="contact-item"><a>info@devstudio.com</a></li>
+        <li class="contact-item"><a>+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <!-- Герой -->
-      <section>
+      <section class="section hero-section">
         <h1>Эффективные решения для вашего бизнеса</h1>
         <button type="button">Заказать услугу</button>
       </section>
-      <section>
+      <section class="section quality-section">
         <!-- <h2>Позитивні якості</h2> -->
-        <ul>
-          <li>
+        <ul class="quality-list">
+          <li class="quality-item">
             <h3>Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="quality-item">
             <h3>Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="quality-item">
             <h3>Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="quality-item">
             <h3>Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
@@ -67,7 +80,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
@@ -96,9 +109,9 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section our-team-section">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class="team-list">
           <li>
             <img
               src="./images/team-member-1.jpg"
@@ -140,10 +153,12 @@
     </main>
     <footer>
       <address>
-        <a href=""><span>Web</span>Studio</a>
-        г. Киев, пр-т Леси Украинки, 26
-        <a href="">info@devstudio.com</a>
-        <a href="">+38 096 111 11 11</a>
+        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <p>г. Киев, пр-т Леси Украинки, 26</p>
+      </address>
+      <address>
+        <a href="" class="footer-contact-item">info@devstudio.com</a><br />
+        <a href="" class="footer-contact-item">+38 096 111 11 11</a>
       </address>
     </footer>
   </body>
