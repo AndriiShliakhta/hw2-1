@@ -205,11 +205,14 @@ header {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  position: relative;
+
   width: 528px;
   height: 581px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+
   background-color: var(--white-color);
   border-radius: 4px;
   background: #fff;
@@ -222,6 +225,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: absolute;
 
   padding: 0;
   margin: 8px 8px 0 0;
@@ -245,6 +250,130 @@ header {
 .is-hidden .modal {
   transform: scale(0.5);
 }
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+
+  font-size: 12px;
+  letter-spacing: 0.12px;
+}
+.modal form h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+.modal input:not(.checkbox-agree),
+.modal textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+
+  padding: 11px 42px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+/* .modal-labels {
+  position: relative;
+} */
+/* .contact-modal-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+} */
+.modal-contact-input {
+  /* position: relative; */
+}
+/* .modal-contact-input span {
+  display: block;
+  width: 18px;
+  height: 18px;
+} */
+.modal-labels span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  outline: 1px solid red;
+  top: 0;
+  left: 0;
+}
+.input-name span::after {
+  background-image: url(../images/person-black-18dp1.svg);
+}
+.input-comment-label textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+.input-comment-label textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+
+  font-size: 12px;
+  letter-spacing: 0.12px;
+}
+.modal .input-checkbox-label {
+  display: inline;
+  width: 100%;
+
+  color: var(--primary-text-color);
+  line-height: 1.71; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.input-checkbox-label .agreement-words {
+  color: var(--accent-color);
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+}
+
+.checkbox-agree {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.modal .checkbox-span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 15px;
+  margin: 0 8px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
+}
+.checkbox-agree:checked + span {
+  background-color: #2196f3;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}
+.modal .send-btn {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
 .quality-section .container {
   padding-bottom: 0;
 }
