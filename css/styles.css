@@ -507,7 +507,7 @@ textarea:focus,
   align-items: center;
   width: 170px;
   height: 92px;
-  color: var(--white-color);
+  color: #afb1bb;
 }
 .client-icon {
   fill: currentColor;
