@@ -1,0 +1,85 @@
+.footer {
+  background-color: $dark-grey-background;
+  color: $white-color;
+}
+.footer .footer-container {
+  padding: 60px 15px;
+  display: flex;
+}
+
+.address-logo {
+  color: $white-color;
+  letter-spacing: 0.42px;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+.physical-address {
+  margin-top: 20px;
+}
+.social-media-container {
+  margin-left: 70px;
+  padding-top: 12px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.social-media-container h3 {
+  color: $white-color;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer-container .social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-container .social-media-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $white-color;
+}
+
+.footer-contact-item {
+  font-style: normal;
+  letter-spacing: 0.42px;
+
+  &:first-child {
+    margin-bottom: 9px;
+  }
+}
+.footer-contact-link {
+  color: $white-transparent-color;
+
+  &:hover,
+  &:focus {
+    @extend %accent-style;
+  }
+}
+
+.footer form {
+  margin-left: 93px;
+  padding-top: 12px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-btn-container {
+  display: flex;
+  height: 50px;
+  margin-top: 20px;
+}
+.subscribe-email {
+  box-sizing: border-box;
+  width: 358px;
+  margin-right: 8px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.25; /* 125% */
+  letter-spacing: 0.48px;
+  color: $white-color;
+}
