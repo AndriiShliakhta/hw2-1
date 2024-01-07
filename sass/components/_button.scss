@@ -1,35 +1,25 @@
-.button {
-  color: $white-color;
-  background-color: $accent-color;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87; /* 187.5% */
-  cursor: pointer;
-  letter-spacing: 0.96px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
 .service-order-btn {
+  @extend %button;
   padding: 10px 32px;
 }
 
 .button.close-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %button;
+
+  @include flex(flex, center, center);
+
   position: absolute;
   padding: 0;
   margin: 8px 8px 0 0;
   border-radius: 50%;
   background-color: transparent;
+  box-shadow: none;
 
   &:hover .close-modal-icon {
     fill: $accent-color;
   }
 }
+
 .close-modal-icon {
   width: 30px;
   height: 30px;
@@ -38,6 +28,8 @@
 }
 
 .modal .send-btn {
+  @extend %button;
+
   width: 200px;
   margin: auto;
   margin-top: 30px;
@@ -45,6 +37,8 @@
 }
 
 .subscribe-btn {
+  @extend %button;
+
   margin: 0;
   padding: 10px 29px;
 

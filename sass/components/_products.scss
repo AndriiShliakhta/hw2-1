@@ -1,0 +1,30 @@
+.products-section {
+  text-align: center;
+}
+.products-section h2,
+.our-team-section h2 {
+  margin-bottom: 50px;
+}
+.products-list {
+  display: flex;
+  justify-content: space-between;
+}
+.products-item {
+  position: relative;
+}
+
+.product-category {
+  @include flex(flex, center, center);
+
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: #fff;
+
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}
