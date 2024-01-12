@@ -23,48 +23,57 @@
   <body>
     <header class="section header">
       <div class="container header-container">
-        <nav>
-          <ul class="header-nav">
-            <li>
-              <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu_item">
+              <a
+                class="header-menu_link current-page-underline"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li>
-              <ul class="header-menu">
-                <li class="header-menu_item">
-                  <a
-                    class="header-menu_link current-page-underline"
-                    href="./index.html"
-                    >Студия</a
-                  >
-                </li>
-                <li class="header-menu_item">
-                  <a class="header-menu_link" href="./portfolio.html"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="header-menu_item">
-                  <a class="header-menu_link" href="">Контакты</a>
-                </li>
-              </ul>
+            <li class="header-menu_item">
+              <a class="header-menu_link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-menu_item">
+              <a class="header-menu_link" href="">Контакты</a>
             </li>
           </ul>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-item-link" href="mailto:info@devstudio.com">
+                <svg class="mail-icon" width="16" height="14">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a class="contact-item-link" href="tel:+380961111111"
+                ><svg class="telephone-icon" width="10" height="16">
+                  <use
+                    href="./images/symbol-defs.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <button class="menu-toggle close-nav-menu-btn">
+            <svg class="close-nav-menu-btn-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a class="contact-item-link" href="mailto:info@devstudio.com">
-              <svg class="mail-icon" width="16" height="14">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item">
-            <a class="contact-item-link" href="tel:+380961111111"
-              ><svg class="telephone-icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <button
+          class="menu-toggle open-nav-menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="open-nav-menu-btn-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -527,5 +536,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

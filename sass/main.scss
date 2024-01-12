@@ -20,11 +20,21 @@
 @import "./utils/placeholders";
 
 .section {
-  width: 1600px;
+  width: 480px;
   margin: auto;
+  padding: 0 15px;
 }
+
 .container {
-  width: 1200px;
   margin: auto;
-  padding: 94px 15px;
 }
+
+// .section {
+//   width: 1600px;
+//   margin: auto;
+// }
+// .container {
+//   width: 1200px;
+//   margin: auto;
+//   padding: 94px 15px;
+// }
