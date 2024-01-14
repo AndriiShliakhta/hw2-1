@@ -54,6 +54,7 @@ button {
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
+  line-height: 1.17;
 }
 
 .header .header-container {
@@ -75,9 +76,9 @@ button {
 
 .header-nav.is-open {
   display: block;
-  padding: 48px 40px;
   width: 100%;
   height: 100vh;
+  padding: 48px 40px;
   background-color: #ffffff;
   position: absolute;
   top: 0;
@@ -103,10 +104,27 @@ button {
 .header-menu_link:visited {
   color: inherit;
 }
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-bottom: 64px;
+}
+
 .contact-item {
   font-size: 34px;
   font-weight: 500;
   letter-spacing: 0.68px;
+}
+
+.contact-item:first-child {
+  font-size: 24px;
+  letter-spacing: 0.48px;
+  margin-top: 32px;
 }
 
 .contact-item-link {
@@ -121,6 +139,39 @@ button {
 .telephone-icon {
   display: none;
   margin-bottom: 32px;
+}
+
+.socialmedia-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.socialmedia-item {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.socialmedia-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.socialmedia-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.socialmedia-link {
+  color: #2196f3;
 }
 
 .filter-menu {
