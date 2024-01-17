@@ -23,6 +23,12 @@
   width: 480px;
   margin: auto;
   padding: 0 15px;
+  margin-bottom: 60px;
+
+  &.header,
+  &.footer {
+    margin-bottom: 0;
+  }
 }
 
 .container {
